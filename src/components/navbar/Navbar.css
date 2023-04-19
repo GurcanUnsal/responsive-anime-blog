@@ -1,0 +1,148 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1.75rem 0;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 19999;
+
+  background: linear-gradient(180deg, black 30%, rgba(0, 0, 0, 0));
+}
+
+.nav-item {
+  margin: 0 6rem;
+}
+
+.title {
+  margin-left: 1rem;
+}
+
+.nav-item-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+/* Logo */
+
+.logo {
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.logo a {
+  text-decoration: none;
+}
+
+/* Navigation */
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  list-style: none;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  font-weight: 700;
+  margin: 0 2rem;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+/* Small and Medium Size */
+
+@media screen and (max-width: 1024px) {
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav-item-links {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+
+    padding: 0.5rem;
+    height: 100%;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.5rem;
+
+    position: absolute;
+    top: 100px;
+    right: 15px;
+    margin-right: 3rem;
+
+    background-color: #151221;
+    min-width: auto;
+    border-radius: 10px;
+
+    animation-name: scale-up;
+    animation-duration: 0.4s;
+
+    box-shadow: #A555EC 0 0 10px 1px;
+  }
+
+  .menu .nav-links li {
+    margin: 0.8rem 0;
+  }
+
+  .logo {
+    font-size: small;
+  }
+  .logo-png {
+    height: 60px;
+    width: 60px;
+  }
+
+  .navbar {
+    background: linear-gradient(180deg, black 30%, rgba(0, 0, 0, 0));
+  }
+  .nav-item {
+    margin: 0 4rem;
+  }
+  
+}
+
+@media screen and (max-width: 700px) {
+  .logo-png {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .menu {
+    display: none;
+  }
+}
+
+/* Animation - Dökümantasyondan alınan hazır bir kod parçacığıdır */
+
+@keyframes scale-up {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}

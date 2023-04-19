@@ -1,0 +1,93 @@
+.new-post-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+    padding: 3rem 0;
+    border: 1px solid #7149C6;
+    background-color: rgba(113, 73, 198, .05);
+
+}
+
+.new-post-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.new-post-input {
+    width: 80%;
+    display: block;
+    padding: 1rem;
+
+    border-radius: 10px;
+
+    background-color: rgba(170, 119, 255, 0.1);
+    border: none;
+    color: #999999;
+    outline: none;
+
+    
+}
+
+.input-large {
+    height: 25%;
+}
+
+.new-post-btn {
+    width: 60%;
+    padding: 1rem 0.5rem;
+
+    border-radius: 10px;
+    background-color: #070707;
+    border: 1px solid #7149C6;
+    color: #7149C6;
+    font-size: large;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.new-post-btn:hover {
+    background-color: rgba(113, 73, 198, 0.1)
+    ;
+}
+
+@media screen and (max-width: 700px) {
+    .img-upload {
+        width: 75%;
+    }
+
+    .new-post-form {
+        width: 80%;
+        min-height: 50%;
+    }
+}
+
+
+.new-post-input::placeholder { 
+    color: #999999;
+    opacity: 1; 
+}
+
+.img-upload {
+    color: #999999;
+    font-family: "Montserrat";
+}
+
+input::file-selector-button {
+    font-weight: bold;
+    background-color: #070707;
+    color: #999999;
+    padding: 0.75rem;
+    border-radius: 10px;
+    border: 1px solid #999999;
+}

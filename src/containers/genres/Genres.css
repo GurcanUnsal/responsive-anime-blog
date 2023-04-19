@@ -1,0 +1,16 @@
+
+.genres-container h1 {
+    margin-bottom: 1.5rem;
+}
+
+#genres {
+    width: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin: 1rem 0;
+}
